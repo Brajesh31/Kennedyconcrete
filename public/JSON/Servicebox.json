@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "/src/assets/img/Home.svg",
+    "servicetitle": "Convenience",
+    "servicetext": "Get all your building materials in one place, saving time and effort."
+  },
+  {
+    "icon": "/src/assets/img/Homeservice.svg",
+    "servicetitle": "Quality You can Trust",
+    "servicetext": "Depend on premium materials trusted by builders across Florida."
+  },
+  {
+    "icon": "/src/assets/img/Building.svg",
+    "servicetitle": "Expert Guidance",
+    "servicetext": "Our knowledgeable team provides personalized advice and support for your unique project needs."
+  }
+]

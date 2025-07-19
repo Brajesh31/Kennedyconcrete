@@ -1,0 +1,467 @@
+/* =============================================  Default CSS Start ======================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #DE0B18;
+  --black: #141422;
+  --off-gray: rgb(111, 110, 119);
+  --body-color: #6F6E77;
+  --gray: #7A7A7A;
+
+  /* font family */
+  --outfit: "Outfit", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+/* =============================================  Default CSS End ======================================================*/
+
+/**** ============================== 
+ConcreteDeliveryService Page CSS
+===================================***
+*/
+
+
+
+/**** ============================== 
+ConcreteDeliveryService Page CSS End
+===================================***
+*/
+
+
+
+/**** ============================== 
+Buildingmaterials Page CSS
+===================================***
+*/
+
+/* =============================================  About CSS Start ====================================================*/
+.service-container {
+  padding: 80px 0 !important;
+}
+
+.about {
+  padding: 30px !important;
+}
+
+.about-title {
+  color: var(--red);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.about h1 {
+  font-size: 45px !important;
+  line-height: 54px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.about p {
+  font-size: 16px;
+  color: var(--off-gray);
+  font-weight: 400;
+  line-height: 28px;
+  /* margin: 0 0 18px !important; */
+}
+
+.grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-template-rows: repeat(1, 1fr) !important;
+  grid-auto-flow: row !important;
+}
+
+#packages h4 {
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--black);
+  margin: 0 0 15px !important;
+}
+
+#packages p {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--body-color) !important;
+  margin: 0 0 18px !important;
+  font-weight: 400;
+}
+
+.list {
+  color: var(--gray) !important;
+  margin: 0 0 16px !important;
+  padding: 0 0 0 32px !important;
+  list-style: circle !important;
+}
+
+/* =============================================  Card CSS Start ====================================================*/
+#apart {
+  padding: 140px 0 90px !important;
+}
+
+.background {
+  padding-bottom: 200px !important;
+  background-color: var(--black);
+  /* height: 728px; */
+}
+
+.box {
+  padding: 0 12px !important;
+}
+
+/* Servicebox component css */
+#service-box {
+  width: 100%;
+  height: 221px !important;
+  border-top: 2px solid rgb(222, 11, 24);
+  position: relative;
+  background-color: #fff;
+  padding: 0 40px 0px 40px !important;
+  transition: all 0.3s linear;
+
+  & img {
+    margin-bottom: 12px !important;
+  }
+}
+
+#service-box:hover {
+  background-color: var(--black);
+}
+
+#service-box:hover .servicetitle {
+  color: #fff !important;
+}
+
+#service-box:hover .servicetext {
+  color: #fff !important;
+}
+
+#service-box:hover #service-default-icon img {
+  transform: rotateY(360deg) !important;
+}
+
+#service-default-icon {
+  perspective: 1000px;
+  width: 84px;
+  height: 57px;
+  background-color: rgb(222, 11, 24);
+  position: relative;
+  padding: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0%;
+}
+
+#service-default-icon img {
+  transform: rotateY(0deg) !important;
+  transition: all 0.4s linear !important;
+  transform-style: preserve-3d !important;
+  backface-visibility: hidden !important;
+}
+
+#service-default-icon::after {
+  content: "" !important;
+  position: absolute !important;
+  width: 116px !important;
+  height: 38px !important;
+  left: 46% !important;
+  top: -66% !important;
+  transform: translateX(-50%) !important;
+  background-color: rgb(222, 11, 24) !important;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%) !important;
+}
+
+.servicetitle {
+  font-family: var(--outfit) !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--black) !important;
+}
+
+.servicetext {
+  font-family: var(--outfit) !important;
+  font-size: 14px !important;
+  color: var(--body-color) !important;
+  font-weight: 400 !important;
+}
+
+/* Servicebox component css end */
+
+@media (max-width: 768px) {
+  .service-iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .service-iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .service-iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* =============================================  Card CSS End ====================================================*/
+
+/* =============================================Preferred Contractors CSS Start ====================================================*/
+
+#preferredcontractors {
+  width: 100%;
+  padding: 120px 0 90px !important;
+}
+
+.gap {
+  padding: 0 15px !important;
+}
+
+.contract_title {
+  font-weight: 900 !important;
+  line-height: 54px !important;
+  color: var(--black) !important;
+  font-size: 45px;
+  padding: 0 0 15px !important;
+  /* max-width: 1140px; */
+
+  & span {
+    color: var(--red) !important;
+  }
+}
+
+.main-container p {
+  font-size: 16px !important;
+  line-height: 29px !important;
+  font-weight: 400 !important;
+  color: var(--off-gray) !important;
+  margin: 0 0 18px !important;
+}
+
+.main-container h4 {
+  font-size: 30px !important;
+  line-height: 40px !important;
+  color: var(--black);
+
+  & strong {
+    font-weight: 700 !important;
+
+    & span {
+      color: var(--red) !important;
+    }
+  }
+}
+
+.work-list {
+  padding: 10px 10px 10px 32px !important;
+  margin: 0 0 16px !important;
+}
+
+.list-style li {
+  list-style: disc;
+}
+
+#connect-para {
+  margin-top: 15px !important;
+}
+
+.forms-container {
+  padding: 0 0 16px !important;
+}
+
+.forms-container label {
+  font-size: 13px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #212d3a !important;
+  margin: 0 0 4px !important;
+}
+
+.forms-container .input {
+  width: 100% !important;
+  max-width: 1140px !important;
+  background-color: #f5f8fa !important;
+  padding: 0 15px !important;
+  height: 40px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.forms-container textarea {
+  font-family: Arial, Helvetica, sans-serif !important;
+  padding: 5px 20px !important;
+  width: 100% !important;
+  max-width: 1140px !important;
+  height: 66px !important;
+  background-color: #f5f8fa !important;
+}
+
+.forms-container button {
+  width: 90px;
+  height: 38px;
+  border: none !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  line-height: 12px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #de0019 !important;
+  padding: 12px 24px !important;
+  border-radius: 4px !important;
+}
+
+@media (max-width:576px) {
+  .contract_title {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+}
+
+/* =============================================  Concrete ProjectsCSS Start ====================================================*/
+
+/* Sidewalk dropdownn css */
+
+/* .video-container {
+  padding: 120px 0 90px !important;
+} */
+
+
+
+#para p {
+  font-family: var(--outfit) !important;
+  font-weight: 400 !important;
+  color: rgb(111, 110, 119) !important;
+  line-height: 29px !important;
+}
+
+#video_card {
+  padding: 30px !important;
+
+  & .text {
+    /* position: relative; */
+    /* bottom: 50px !important; */
+    font-family: var(--roboto) !important;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  & h1 {
+    /* position: relative; */
+    /* bottom: 30px !important; */
+    font-family: var(--outfit) !important;
+    font-weight: 700 !important;
+    font-size: 45px !important;
+    line-height: 54px !important;
+  }
+
+  & .para {
+    font-family: var(--outfit) !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: rgb(111, 110, 119) !important;
+    line-height: 29px !important;
+  }
+}
+
+@media (max-width:430px) {
+  .iframe {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container iframe {
+    width: 100% !important;
+    max-width: 234px !important;
+    height: 100% !important;
+    max-height: 17 0px;
+  }
+
+  .video-text .text {
+    position: relative;
+    bottom: 0px !important;
+    font-family: var(--roboto) !important;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  .title-h1 {
+    & h1 {
+      position: relative;
+      bottom: 0px !important;
+      font-family: var(--outfit) !important;
+      font-weight: 700 !important;
+      font-size: 45px !important;
+      line-height: 54px !important;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .video-container iframe {
+    width: 287px !important;
+    height: 164px !important;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .video-container iframe {
+    width: 400px !important;
+    height: 300px !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+
+  .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .video-container iframe {
+    width: 400px !important;
+    height: 300px !important;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+
+  .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .video-container iframe {
+    max-width: 500px !important;
+    max-height: 300px !important;
+  }
+}
+
+/* =============================================  Concrete ProjectsCSS End====================================================*/

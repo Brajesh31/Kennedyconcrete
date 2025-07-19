@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --off-white: rgb(255, 255, 255);
+  --outfit: "Outfit", sans-serif;
+}
+
+.hero {
+  & h2 {
+    font-family: var(--outfit);
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50px;
+    color: var(--off-white) !important;
+  }
+}
+
+
+@media (max-width:768px) {
+
+  .hero h2 {
+    font-size: 34px;
+    line-height: 37px;
+  }
+}

@@ -1,0 +1,143 @@
+.dual-dot-btn {
+  font-family: "Outfit",
+    sans-serif;
+  position: relative !important;
+  padding: 14px 40px !important;
+  font-size: 16px !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 2px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+  transition: none !important;
+  font-weight: 600 !important;
+}
+
+/* Left dot */
+.dual-dot-btn::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: -20px !important;
+  width: 12px !important;
+  height: 12px !important;
+  background: var(--dot-color, #000) !important;
+  border-radius: 50% !important;
+  z-index: -1 !important;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transform: translateY(-50%) !important;
+  opacity: 0 !important;
+}
+
+/* Right dot */
+.dual-dot-btn::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: -20px !important;
+  width: 12px !important;
+  height: 12px !important;
+  background: var(--dot-color, #000) !important;
+  border-radius: 50% !important;
+  z-index: -1 !important;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transform: translateY(-50%) !important;
+  opacity: 0 !important;
+}
+
+/* Background fill effect */
+.dual-dot-btn .bg-fill {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: var(--hover-bg-color, #000) !important;
+  z-index: -2 !important;
+  transform: scaleX(0) !important;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s !important;
+}
+
+.dual-dot-btn::before,
+.dual-dot-btn::after {
+  transition: all 0.5s ease-in-out !important;
+}
+
+.dual-dot-btn .bg-fill {
+  transition: all 0.6s ease-in-out 0.3s !important;
+}
+
+.dual-dot-btn:hover::before {
+  opacity: 1 !important;
+  left: 50% !important;
+  transform: translateY(-50%) translateX(-50%) !important;
+}
+
+.dual-dot-btn:hover::after {
+  opacity: 1 !important;
+  right: 50% !important;
+  transform: translateY(-50%) translateX(50%) !important;
+}
+
+.dual-dot-btn:hover .bg-fill {
+  transform: scaleX(1) !important;
+}
+
+.dual-dot-btn:hover {
+  color: var(--hover-text-color, #fff) !important;
+}
+
+/* Remove abrupt transition reset */
+.dual-dot-btn:not(:hover) .bg-fill {
+  transform: scaleX(0) !important;
+  transition: all 0.2s linear !important;
+}
+
+.dual-dot-btn:not(:hover)::before,
+.dual-dot-btn:not(:hover)::after {
+  opacity: 0 !important;
+  transition: opacity 0.1s ease-in-out !important;
+  left: -20px !important;
+  right: -20px !important;
+  transform: translateY(-50%) !important;
+}
+
+@keyframes dotMove {
+  0% {
+    opacity: 1 !important;
+    transform: translateY(-50%) !important;
+  }
+
+  40% {
+    opacity: 1 !important;
+    transform: translateY(-50%) translateX(0) !important;
+  }
+
+  60% {
+    opacity: 1 !important;
+    transform: translateY(-50%) translateX(0) scale(1.2) !important;
+  }
+
+  80% {
+    opacity: 0.8 !important;
+    transform: translateY(-50%) translateX(0) scale(1.8) !important;
+  }
+
+  100% {
+    opacity: 0 !important;
+    transform: translateY(-50%) translateX(0) scale(2.5) !important;
+  }
+}
+
+/* Second Button */
+
+.normalbtn {
+  font-family: "Outfit", sans-serif !important;
+  border-radius: 5px !important;
+  padding: 20px 40px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
