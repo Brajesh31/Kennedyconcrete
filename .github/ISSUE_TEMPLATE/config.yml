@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Brajesh31/Kennedyconcrete/security/advisories/new
+    about: Report security issues privately. Do not post candidate or customer information publicly.
+  - name: Contribution guidelines
+    url: https://github.com/Brajesh31/Kennedyconcrete/blob/main/CONTRIBUTING.md
+    about: Review contribution expectations before opening a pull request.
